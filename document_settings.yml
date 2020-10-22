@@ -1,14 +1,12 @@
 document:
-  name: "CIE 3.0, Manuale utente del middleware CIE"
-  short_name: cie30-middleware
+  name: Test Docs Italia
   description: |
-    Questo manuale per l'utente illustra le principali funzionalità messe a
-    disposizione dall'applicativo Middleware CIE.
+    Test Docs Italia Description
   tags:
-    - Manuale
-    - Middleware
-    - CIE
-    - Carta di Identità Elettronica
-    - Docs Italia
-  software_website: https://www.cartaidentita.interno.gov.it/
-  type: Manuale utente
+    - INGV
+    - politica dei dati
+    - database
+    - dataset
+    - ricerca scientifica
+    - metadati
+    - FAIR
