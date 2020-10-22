@@ -1,12 +1,15 @@
+
 document:
-  name: Attuazione della Politica dei Dati dell'INGV
+  name: "CIE 3.0, Manuale utente del middleware CIE"
+  short_name: cie30-middleware
   description: |
-    Attuazione della Politica dei Dati dell'Istituto Nazionale di Geofisica e Vulcanologia.
+    Questo manuale per l'utente illustra le principali funzionalità messe a
+    disposizione dall'applicativo Middleware CIE.
   tags:
-    - INGV
-    - politica dei dati
-    - database
-    - dataset
-    - ricerca scientifica
-    - metadati
-    - FAIR
+    - Manuale
+    - Middleware
+    - CIE
+    - Carta di Identità Elettronica
+    - Docs Italia
+  software_website: https://www.cartaidentita.interno.gov.it/
+  type: Manuale utente
