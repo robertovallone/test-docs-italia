@@ -24,7 +24,7 @@ release = '1.0.0'
 copyright = 'to be set'
 author = u'INGV'
 
-copyright = str(datetime.now().year)
+copyright = "2020 Istituto Nazionale di Geofisica e Vulcanologia"
 
 
 # -- General configuration ---------------------------------------------------
