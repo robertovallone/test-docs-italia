@@ -11,6 +11,8 @@ jobs:
       - run:
           name: Use Sphinx to make the html docs
           command: |
+            pwd
+            ls -l
             make html
             
 workflows:
