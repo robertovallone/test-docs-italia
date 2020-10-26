@@ -22,7 +22,7 @@ import docs_italia_theme
 project = 'test-docs-italia'
 release = '1.0.0'
 copyright = 'to be set'
-author = 'INGV'
+author = u'INGV'
 
 
 # -- General configuration ---------------------------------------------------
@@ -31,6 +31,13 @@ author = 'INGV'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
+    'sphinx.ext.autodoc',
+    'sphinx.ext.doctest',
+    'sphinx.ext.intersphinx',
+    'sphinx.ext.todo',
+    'sphinx.ext.coverage',
+    'sphinx.ext.ifconfig',
+    'docs_italia_theme'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
