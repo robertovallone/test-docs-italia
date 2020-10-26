@@ -24,6 +24,8 @@ release = '1.0.0'
 copyright = 'to be set'
 author = u'INGV'
 
+copyright = str(datetime.now().year)
+
 
 # -- General configuration ---------------------------------------------------
 
@@ -48,6 +50,12 @@ templates_path = ['_templates']
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = []
 
+# Grouping the document tree into LaTeX files. List of tuples
+# (source start file, target name, title, author, documentclass [howto/manual]).
+latex_documents = [
+    ('index', 'test-docs-italia.tex', project, author, 'manual'),
+]
+
 
 # -- Options for HTML output -------------------------------------------------
 
@@ -56,6 +64,19 @@ exclude_patterns = []
 #
 html_theme = 'docs_italia_theme'
 html_theme_path = [docs_italia_theme.get_html_theme_path()]
+html_title = "test-docs-italia"
+html_show_sourcelink = False
+html_favicon = "favicon.ico"
+html_logo = "logo.png"
+latex_logo = 'logo.png'
+html_baseurl = 'docs'
+smartquotes = False
+language = "it"
+numfig = True
+# The master toctree document.
+master_doc = 'index'
+source_suffix = '.rst'
+
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
