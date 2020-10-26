@@ -11,8 +11,7 @@ jobs:
       - run:
           name: Use Sphinx to make the html docs
           command: |
-            make html
-            make latexpdf
+            sphinx-build -M html "." "_build"
             
 workflows:
   version: 2
