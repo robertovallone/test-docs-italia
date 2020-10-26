@@ -11,7 +11,7 @@ jobs:
       - run:
           name: Use Sphinx to make the html docs
           command: |
-            sphinx-build -M html "." "_build"
+            make html
             
 workflows:
   version: 2
