@@ -56,8 +56,11 @@ jobs:
           name: Install and configure dependencies
           command: |
             npm install -g --silent gh-pages@2.0.1
-            git config user.email "builds@circleci.com"
+            git config user.email "ci-builds@ingv.it"
             git config user.name "CircleCI"
+      - add_ssh_keys:
+          fingerprints:
+            - "34:2e:fa:4f:1c:09:37:11:d4:01:6a:ed:b4:fb:5c:fe"
       - run:
           name: Deploy docs to gh-pages branch
           command: gh-pages --dotfiles --message "[skip ci] Updates" --dist _build/html
@@ -72,4 +75,4 @@ workflows:
             - docs-build
           filters:
             branches:
-              only: master
+              only: main
