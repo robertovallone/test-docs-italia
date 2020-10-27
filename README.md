@@ -28,9 +28,12 @@ $ docker run -it -v /tmp/temp_dir:/tmp/temp_dir --rm python:3.7 bash
 ~/project/test-docs-italia# cp -R _build/html /tmp/temp_dir/
 ```
 
-## guide
+## Guide
 ### Configurazione CircleCI + GitHub Pages
 - https://circleci.com/blog/continuous-integration-for-adonis-apis/
 
 ### Sphinx:
 - https://www.sphinx-doc.org/en/master/usage/configuration.html
+
+## Sito GitHub Page
+- https://ingv.github.io/test-docs-italia/
