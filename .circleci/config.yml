@@ -1,6 +1,6 @@
 version: 2
 jobs:
-  job_1:
+  docs-build:
     docker:
       - image: python:3.7
     steps:
@@ -38,9 +38,38 @@ jobs:
             # cp _build/epub/*.epub _build/html/
             # Tell GitHub not to use jekyll to compile the docs
             touch _build/html/.nojekyll
+      - persist_to_workspace:
+          root: _build
+          paths: html
+          
+  docs-deploy:
+    docker:
+      - image: node:8.10.0
+    steps:
+      - checkout
+      - attach_workspace:
+          at: _build
+      - run:
+          name: Disable jekyll builds
+          command: touch docs/_build/html/.nojekyll
+      - run:
+          name: Install and configure dependencies
+          command: |
+            npm install -g --silent gh-pages@2.0.1
+            git config user.email "builds@circleci.com"
+            git config user.name "CircleCI"
+      - run:
+          name: Deploy docs to gh-pages branch
+          command: gh-pages --dotfiles --message "[skip ci] Updates" --dist _build/html
             
 workflows:
   version: 2
   build_valentino:
     jobs:
-      - job_1
+      - docs-build
+      - docs-deploy:
+          requires:
+            - docs-build
+          filters:
+            branches:
+              only: master
