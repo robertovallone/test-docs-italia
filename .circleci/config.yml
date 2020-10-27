@@ -67,7 +67,7 @@ jobs:
             
 workflows:
   version: 2
-  build_valentino:
+  build_test-docs-italia:
     jobs:
       - docs-build
       - docs-deploy:
