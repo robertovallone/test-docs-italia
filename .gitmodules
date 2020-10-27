@@ -1,0 +1,3 @@
+[submodule "docs-italia-ingv-theme-template"]
+	path = docs-italia-ingv-theme-template
+	url = https://github.com/INGV/docs-italia-ingv-theme-template.git
