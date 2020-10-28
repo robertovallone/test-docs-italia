@@ -1,4 +1,4 @@
-# test-docs-italia
+# test-docs-italia [![CircleCI](https://circleci.com/gh/INGV/test-docs-italia/tree/main.svg?style=svg)](https://circleci.com/gh/INGV/test-docs-italia/tree/main)
 
 Questo e' un progetto di test per "testare":
 - il template di Docs Italia come base
