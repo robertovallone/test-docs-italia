@@ -7,7 +7,7 @@ Questo e' un progetto di test per "testare":
 
 ## Debug sul proprio PC
 ```
-$ docker run -it -v /tmp/temp_dir:/tmp/temp_dir --rm python:3.7 bash
+$ docker run -it -v /tmp/temp_dir:/tmp/temp_dir python:3.7 bash
 . . .
 #
 # apt-get update && apt-get install -y texlive-base texlive-latex-base texlive-latex-recommended texlive-fonts-recommended texlive-fonts-extra texlive-latex-extra texlive-formats-extra texlive-bibtex-extra texlive-humanities texlive-lang-italian texinfo texlive-science latexmk vim
